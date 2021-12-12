@@ -4,8 +4,8 @@
 */
 
 let n = 10;
-for (let i = 2; n > i ; i++) {
-      if (n % n) {
+for (let i = 2; n >= i ; i++) {
+      if (n % i == 0) {
             alert(i);
       } else {
       }
