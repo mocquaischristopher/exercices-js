@@ -5,6 +5,8 @@
 
 //Créez une page Web qui demande un nom et l'affiche
 
-let name = prompt("Quel est votre nom?", "");
+let name = prompt('Quel est votre nom?', '')
+let nom = prompt('Quel est votre nom?')
 
-alert(name);
+alert(name)
+alert(nom)

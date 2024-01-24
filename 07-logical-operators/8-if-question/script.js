@@ -6,7 +6,7 @@
 /**
  * Lesquelles de ces `alert`es vont s'exécuter ?
 
-Quels seront les résultats des expressions à l'intérieur de `if (...)` ?  
+Quels seront les résultats des expressions à l'intérieur de `if (...)` ?
 
 ```js
 if (-1 || 0) alert( 'first' );
@@ -16,6 +16,12 @@ if (null || -1 && 1) alert( 'third' );
 
  */
 
-if (-1 || 0) alert( 'first' ); //alert s'éxécute car || renvoi 1ere valeur vrai qui est -1
-if (-1 && 0) alert( 'second' ); //
-if (null || -1 && 1) alert( 'third' ); //alert s'éxécute car cela renverra une valeur vrai vu que && supérieur à ||
+if (-1 || 0)
+    alert('first') /*alert s'éxécute car || renvoi 1ere valeur vrai qui est -1
+                              S'affiche, || renvoie -1 qui est true */
+if (-1 && 0) alert('second') // Ne s'affiche pas, && renvoie 0 qui est false
+if (null || (-1 && 1))
+    alert(
+        'third'
+    ) /*alert s'éxécute car cela renverra une valeur vrai vu que && supérieur à ||
+                                    S'affiche, && renvoie 1 puis || renvoie 1 qui est true */

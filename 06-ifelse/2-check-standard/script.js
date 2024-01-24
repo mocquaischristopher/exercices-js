@@ -6,19 +6,18 @@
 /**
  * Quel est le nom "officiel" de JavaScript?'
 
-Si le visiteur entre "ECMAScript", alors éditez une sortie "Bonne réponse !", 
+Si le visiteur entre "ECMAScript", alors éditez une sortie "Bonne réponse !",
 Sinon -- retourne "Ne sait pas ? ECMAScript!"
  */
 
+let answer = prompt('Quel est le nom "officiel" de JavaScript?')
 
-let name = prompt('Quel est le nom "officiel" de JavaScript?', "");
-
-if (name == "ECMAScript") {
-      alert("Bonne réponse !");
+if (answer == 'ECMAScript') {
+    alert('Bonne réponse !')
 } else {
-      alert("Ne sait pas ? ECMAScript!");
+    alert('Ne sait pas ? ECMAScript!')
 }
 
-/* Mon raisonnement est que je fait une variable où je stocke le résultat de la réponse 
+/* Mon raisonnement est que je fait une variable où je stocke le résultat de la réponse
 ensuite je fait la condition if/else afin de ressortir une alerte si le résulltat de la variable est ce que je recherche
 */

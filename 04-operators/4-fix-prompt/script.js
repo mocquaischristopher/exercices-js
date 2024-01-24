@@ -4,14 +4,13 @@
 */
 
 // Résultat : 12
-let a = prompt("First number?", 1);
-let b = prompt("Second number?", 2);
+let a = prompt('First number?', 1)
+let b = prompt('Second number?', 2)
 
-alert(a + b); // 12
+alert(a + b) // 12
 
 // Bon résultat : 3
-let a = +prompt("First number?", 1);
-let b = +prompt("Second number?", 2);
+let c = +prompt('First number?', 1)
+let d = +prompt('Second number?', 2)
 
-alert(a + b); // 3
-
+alert(c + d) // 3

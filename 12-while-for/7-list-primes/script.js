@@ -3,10 +3,22 @@
       - N'oubliez pas de sauvegarder pour afficher les changements.
 */
 
-let n = 10;
-for (let i = 2; n >= i ; i++) {
-      if (n % i == 0) {
-            alert(i);
-      } else {
-      }
-}          
+let num = 10
+for (let i = 2; num >= i; i++) {
+    if (num % i == 0) {
+        alert(i)
+    } else {
+    }
+}
+
+let n = +prompt(`Entrez un nombre`)
+
+for (i = 2; i <= n; i++) {
+    let prime = true
+
+    for (j = 2; j < i; j++) {
+        if (i % j == 0) prime = false
+    }
+
+    if (prime) alert(i)
+}

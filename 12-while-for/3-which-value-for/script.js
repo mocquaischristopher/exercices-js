@@ -12,6 +12,9 @@ Les deux boucles `alert` les mêmes valeurs ou pas ?
 
 //for (let i = 0; i < 5; i++) alert( i ); // 0, 1, 2, 3, 4.
 
-for (let i = 0; i < 5; ++i) alert( i ); // 0, 1, 2, 3, 4.
+for (let i = 0; i < 5; ++i) alert(i) // 0, 1, 2, 3, 4.
 
 // on commence les 2 boucles par i = 0 ensuite on vérifie la condition et ensuite on incrémente donc que sa sois i++ ou ++i cela fait la même chose.
+
+/* Les 2 boucles afficheront la même valeur finale,
+le for résolvant son 3eme argument en dernier de toute manière */

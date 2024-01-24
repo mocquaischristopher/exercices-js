@@ -22,10 +22,14 @@ if (login == 'Employee') {
 
  */
 
-let message = (login == 'Employee') ? 'Hello' : 
-              (login == 'Director') ? 'Greetings' : 
-              (login == '') ? 'No login' :
-              "";
+let message =
+    login == 'Employee'
+        ? 'Hello'
+        : login == 'Director'
+        ? 'Greetings'
+        : login == ''
+        ? 'No login'
+        : ''
 
 /**
  * Mon raisonnement est que de la variable message,
@@ -34,3 +38,13 @@ let message = (login == 'Employee') ? 'Hello' :
  * Sinon je regarde si y'a un login vide, si non j'affiche 'No login',
  * Sinon pas de login j'affiche rien.
  */
+
+// Correction
+let messageCorrection =
+    login == `Employee`
+        ? `Hello`
+        : login == `Director`
+        ? `Greetings`
+        : login == ``
+        ? `No login`
+        : ``

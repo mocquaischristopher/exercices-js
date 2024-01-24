@@ -8,11 +8,15 @@
 
  */
 
-for(let i = 2; i <= 10; i++) {
-      if(i % 2 == 0) {
-            alert(i);
-      }
+for (let i = 2; i <= 10; i++) {
+    if (i % 2 == 0) {
+        alert(i)
+    }
 }
 /** on commence la boucle à 2 et jusqu'à 10 on ajoute 1
  * si i modulo de 2 donne 0 sans reste alerte cela sera que des nombre pair que l'on affiche dans l'alert.
-*/ 
+ */
+
+for (j = 2; j <= 10; j += 2) {
+    alert(j)
+}

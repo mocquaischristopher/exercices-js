@@ -14,14 +14,23 @@ Dans cet exercice, nous supposons que l'entrée est toujours un nombre.
 
  */
 
-let num = prompt("Veuillez noter un nombre", "");
+let num = prompt('Veuillez noter un nombre', '')
 
-if(num > 0) {
-      alert(1);
-} else if(num == 0) {
-      alert(0);
+if (num > 0) {
+    alert(1)
+} else if (num == 0) {
+    alert(0)
 } else {
-      alert(-1);
+    alert(-1)
+}
+
+// Correction
+if (num > 0) {
+    alert(`1`)
+} else if (num < 0) {
+    alert(`-1`)
+} else {
+    alert(`0`)
 }
 
 /**

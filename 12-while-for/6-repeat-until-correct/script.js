@@ -11,11 +11,17 @@ La boucle doit demander un numéro jusqu'à ce que le visiteur saisisse un nombr
 Ici, nous pouvons supposer que le visiteur ne saisit que des chiffres. Il n’est pas nécessaire de mettre en œuvre un traitement spécial pour une entrée non numérique dans cette tâche.
 
  */
-let num;
-do{
-      num = prompt("Saisissez un numéro supérieur à 100", "");
-
-}
-while (num <= 100 && "");
+let num
+do {
+    num = prompt('Saisissez un numéro supérieur à 100', '')
+} while (num <= 100 && '')
 
 //Je fait une boucle do while car j'ai besoin d'éxecuter l'action plusieurs fois et de vérifier avec while si la condition est vrai ou pas
+
+let n = 0
+
+while (n <= 100) {
+    n = +prompt(`Saisissez un nombre supérieur à 100`)
+}
+
+alert(`Merci!`)

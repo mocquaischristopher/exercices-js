@@ -3,7 +3,6 @@
       - N'oubliez pas de sauvegarder pour afficher les changements.
 */
 
-
 /**
  * Écrivez le code en utilisant `if..else` qui correspondrait au `switch` suivant :
 
@@ -26,15 +25,17 @@ switch (browser) {
 ```
  */
 
-let browser;
+let browser = prompt(`What's your browser?`)
 
-if(browser == 'Edge') {
-      alert( "You've got the Edge!");
-} else if (browser == 'Chrome'
-        || browser == 'Firefox'
-        || browser == 'Safari'
-        || browser == 'Opera') {
-      alert('Okay we support these browsers too');
+if (browser == 'Edge') {
+    alert("You've got the Edge!")
+} else if (
+    browser == 'Chrome' ||
+    browser == 'Firefox' ||
+    browser == 'Safari' ||
+    browser == 'Opera'
+) {
+    alert('Okay we support these browsers too')
 } else {
-      alert( 'We hope that this page looks ok!' );
+    alert('We hope that this page looks ok!')
 }
